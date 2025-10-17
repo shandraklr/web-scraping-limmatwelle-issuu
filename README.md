@@ -1,4 +1,4 @@
-#  Docker Setup Guide - Limmatwelle PDF Scraper
+#  Docker Setup Guide - Limmatwelle WEB and PDF Scraper
 
 ##  Prerequisites
 
