@@ -268,7 +268,7 @@ docker-compose up
 
 ---
 
-## 🆘 Support & Debugging Commands
+## Support & Debugging Commands
 
 ### **Common Debug Commands**
 
@@ -382,7 +382,7 @@ du -sh /var/lib/docker/containers/*
 
 ---
 
-## 🎓 Learning Resources
+##  Learning Resources
 
 **Docker:**
 - https://docs.docker.com/get-started/
@@ -395,7 +395,7 @@ du -sh /var/lib/docker/containers/*
 
 ---
 
-## 📊 Output Files
+##  Output Files
 
 After running, you'll find these files in `./output/`:
 
@@ -420,30 +420,4 @@ After running, you'll find these files in `./output/`:
 ```
 
 ---
-
-##  Troubleshooting
-
-### **Error: Chrome not found**
-
-```bash
-# Rebuild the image
-docker-compose build --no-cache
-```
-
-### **Error: Permission denied on output directory**
-
-```bash
-# Fix permissions
-sudo chown -R $USER:$USER output/
-chmod 755 output/
-```
-
-### **Error: Container exits immediately**
-
-```bash
-# Check logs
-docker-compose logs
-
-# Or run with interactive mode
-docker-compose run --rm scraper bash
 ```
