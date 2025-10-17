@@ -40,7 +40,7 @@ def setup_chrome_driver(download_dir: str):
     chrome_options = Options()
     
     # Headless mode (comment out to see browser)
-    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless=new')
     
     # Other useful options
     chrome_options.add_argument('--no-sandbox')
