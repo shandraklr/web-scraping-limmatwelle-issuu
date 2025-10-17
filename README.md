@@ -418,6 +418,3 @@ After running, you'll find these files in `./output/`:
   }
 ]
 ```
-
----
-```
