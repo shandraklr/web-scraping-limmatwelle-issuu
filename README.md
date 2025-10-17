@@ -202,8 +202,8 @@ Then rebuild and run.
 scp -r ./* user@server:/path/to/app/
 
 # Or use git
-git clone your-repo
-cd your-repo
+git clone https://github.com/shandraklr/web-scraping-limmatwelle-issuu.git
+cd https://github.com/shandraklr/web-scraping-limmatwelle-issuu.git
 ```
 
 ### **2. On server, build and run**
