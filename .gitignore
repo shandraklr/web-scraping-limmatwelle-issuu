@@ -1,0 +1,80 @@
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# ENV & CONFIG
+# =========================
+.env
+*.env.*
+*.ini
+*.cfg
+*.yaml
+*.yml
+!requirements.txt   # tetap track requirements
+
+# =========================
+# OUTPUT / DATA / DOWNLOADS
+# =========================
+output/
+downloads/
+*.pdf
+*.json
+*.txt
+*.csv
+*.xls*
+*.parquet
+*.crdownload
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =========================
+# DOCKER
+# =========================
+# jangan commit file build besar atau temp docker
+*.tar
+*.img
+docker-compose.override.yml
+
+# =========================
+# MISC
+# =========================
+# cache, temp, dan logs
+*.tmp
+*.bak
+*.old
+*.log
+*.out
+*.pid
+
+# =========================
+# CUSTOM EXCEPTIONS
+# =========================
+# tetap commit file penting
+!Dockerfile
+!docker-compose.yml
+!README.md
+!requirements.txt
+!limmatwelle_scraper_selenium.py

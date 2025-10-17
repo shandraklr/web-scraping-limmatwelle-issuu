@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  scraper:
+    platform: linux/amd64
+    build: .
+    container_name: limmatwelle-scraper
+    
+    # Environment variables (can override in .env file)
+    environment:
+      - TARGET_DATE=22. Mai
+      - EPAPER_URL=https://www.limmatwelle.ch/e-paper
+    
+    # Mount volumes for persistent data
+    volumes:
+      # Output directory (so you can access downloaded PDFs and results)
+      - ./output:/app/downloads
+      
+    # Resource limits (optional)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
